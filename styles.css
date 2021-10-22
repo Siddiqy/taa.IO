@@ -1,0 +1,735 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    div.topnav {
+        overflow: hidden;
+        background-color: #ffffff;
+        position: relative;
+        display: visible;
+    }
+    
+    div.topnav #myLinks {
+        display: none;
+    }
+    
+    div.topnav span {
+        color: #0B2834;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+    }
+
+    div.topnav a {
+        color: #264c5c;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        display: block;
+    }
+
+    #bottom-btn {
+        text-align: center;
+        margin: 10px;
+        padding: 10px 10px;
+        border-style: none;
+        border-radius: 5px;
+        background-color: #2F348F;
+        color: #ffffff;
+    }
+    
+    /* Style the hamburger menu */
+    div.topnav a.icon {
+        background-image: url("images/iconmonstr-menu-1-24.png");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        margin: 18px 16px;
+        right: 0;
+        top: 0;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    div.topnav a:hover {
+        background-color: #ddd;
+        color: #2F348F;
+    }
+    
+    /* Style the active link (or home/logo) */
+    div.active {
+        background-color: #2F3490;
+        color: white;
+    }
+
+    div.navbar {
+        display: none;
+    }
+    
+    /*------Universal CSS--------*/
+    div.container {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    div.row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*------Hero Image section--------*/
+    div.intro {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+
+    div.intro-img img {
+        height: 300px;
+        width: auto;
+    }
+    
+    div.intro h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #0C354E;
+        padding: 40px 0px 0px 10px;
+    }
+    
+    div.intro p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #0C354E;
+        padding: 10px 0px 0px 10px;
+    }
+    
+    div.intro button {
+        margin-top: 25px;
+        border-style: none;
+        border-radius: 5px;
+        padding: 15px 65px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #2F348F;
+        margin: 30px 0px 0px 10px;
+    }
+    
+    /*-------URL input section--------*/
+    div.submit-url {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2F3490;
+    }
+    
+    div.submit-url input {
+        margin: 0 auto;
+        border-style: none;
+        border-radius: 3px;
+        padding: 13px 0px 13px 20px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    
+    div.submit-url button {
+        width: 280px;
+        margin: 15px 0px 10px 0px;
+        padding: 16px 0px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 3px;
+        background-color: #0E304C;
+        color: white;
+        border-radius: 3px;
+    }
+
+    /*-------Learning Card section--------*/
+    div.card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    
+    div.card > div {
+        border-radius: 5px;
+        box-shadow: 0 1px 5px 0 rgba(182, 180, 180, 0.2);
+        transition: 0.3s;
+        margin: 10px 15px;
+    }
+    
+    div.card > div img {
+        padding: 0;
+        height: 220px;
+        width: auto;
+    }
+    
+    div.card > div h4 {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #0E304C;
+    }
+    
+    div.card > div p {
+        padding: 10px 20px 40px 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2a678d;
+    }
+    
+    /*-------Get Started section--------*/
+    div.get-started {
+        width: 100%;
+        padding: 60px 0px;
+        background-color: #2F3490;
+    }
+    
+    div.get-started h2 {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    div.get-started div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.get-started > div button {
+        margin-top: 20px;
+        border-style: none;
+        border-radius: 5px;
+        padding: 14px 35px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #0E304C;
+        background-color: #ffffff;
+    }
+    
+    /*-------Brands logo section--------*/
+    div.brands {
+        width: 100%;
+        margin: 20px 0px;;
+    }
+    
+    div.brands h3 {
+        color: #0E304C;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    div.brands div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    
+    div.brands div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px;
+    }
+    
+    /*------Footer section------*/
+    div.footer {
+        width: 100%;
+        border-top: 1px solid #e9e9ff;
+        background-color: #F9FAFE;
+    }
+    
+    div.footer-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.footer-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    div.footer-menu span {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: #2a678d;
+    }
+    
+    div.footer-menu span > a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: #2a678d;
+    }
+    
+    div.footer-menu ul {
+        padding: 0px 0px;
+        list-style: none;
+    }
+    
+    div.footer-menu li {
+        padding: 10px 20px;
+    }
+    
+    div.footer-menu li > a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2a678d;
+    }
+    
+    div.back-to-top {
+        position: absolute;
+    }
+    
+    div.back-to-top button {
+        margin-right: 0;
+        border-style: none;
+        color: #ffffff;
+        background-color: #2F3393;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+  
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    div.topnav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    div.topnav {
+        display: none;
+    }
+}
+
+/*------Main Navigation Menu------*/
+.navbar {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navmenu {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #0C354E;
+    font-size: 45px;
+    font-weight: 600; 
+}
+
+.navmenu ul {
+    margin-left: 50px;
+    list-style: none;
+}
+
+.navmenu ul > li {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.navmenu ul > li > a {
+    text-decoration: none;
+    color: #87949C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#menu-button {
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #2F348F;
+    color: #ffffff;
+}
+
+/*------Universal CSS--------*/
+.container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*------Hero Image section--------*/
+.intro {
+    align-self: center;
+    padding-left: 10px ;
+    padding-right: 20px;
+}
+
+.intro-img {
+    margin: 0px;
+    align-self: center;
+}
+
+.intro-img img {
+    height: 350px;
+    width: auto;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #0C354E;
+}
+
+.intro p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0C354E;
+}
+
+.intro button {
+    margin-top: 25px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 15px 65px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2F348F;
+}
+
+/*-------URL input section--------*/
+.submit-url {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    width: 100%;
+    background-color: #2F3490;
+}
+
+.submit-url input {
+    margin-right: 16px;
+    border-style: none;
+    border-radius: 3px;
+    padding: 13px 0px 13px 20px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.submit-url button {
+    width: 280px;
+    margin-left: 16px;
+    padding: 16px 0px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #0E304C;
+    color: white;
+    border-radius: 3px;
+}
+
+/*-------Learning section--------*/
+.learn-bg {
+    width: 100%;
+    padding: 60px 0px;
+    background-color: #f8f9fa; 
+}
+
+.learn-heading {
+    width: 100%;
+    padding: 20px;
+}
+
+.learn-heading h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0E304C;
+}
+
+.learn-heading p {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #2a678d;
+}
+
+/*-------Learning Card section--------*/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > div {
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(182, 180, 180, 0.2);
+    transition: 0.3s;
+    margin: 40px 15px;
+}
+
+.card > div img {
+    padding: 0;
+    height: 200px;
+    width: auto;
+}
+
+.card > div h4 {
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0E304C;
+}
+
+.card > div p {
+    padding: 0px 20px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2a678d;
+}
+
+/*-------Get Started section--------*/
+.get-started {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #2F3490;
+}
+
+.get-started h2 {
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.get-started div {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started > div button {
+    border-style: none;
+    border-radius: 5px;
+    padding: 13px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0E304C;
+    background-color: #ffffff;
+}
+
+/*-------Brands logo section--------*/
+.brands {
+    width: 100%;
+    padding: 20px;
+}
+
+.brands h3 {
+    padding: 20px;
+    text-align: center;
+    color: #0E304C;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.brands div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands div > div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 40px;
+    padding: 40px;
+}
+
+/*------Footer section------*/
+.footer {
+    width: 100%;
+    padding: 25px 20px;
+    border-top: 1px solid #e9e9ff;
+    background-color: #F9FAFE;
+}
+
+.footer-link {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu span {
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2a678d;
+}
+
+.footer-menu span > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2a678d;
+}
+
+.footer-menu ul {
+    margin-left: 50px;
+    list-style: none;
+    display: inline-flex;
+}
+
+.footer-menu li {
+    padding: 0px 10px;
+}
+
+.footer-menu li > a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2a678d;
+}
+
+.footer-link .back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.back-to-top button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-style: none;
+    padding: 4px 10px;
+    color: #ffffff;
+    background-color: #2F3393;
+}

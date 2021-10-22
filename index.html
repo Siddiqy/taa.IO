@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="styles.css" rel="stylesheet">
+        <title>taa.IO</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <!--Main Navigation Menu-->
+        <div class="topnav">
+            <span href="#home" class="active">taa.IO</span>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="my_taa.io">My taa.IO</a>
+                <a href="sign_up">Sign Up</a>
+                <a href="sign_in">Sign In</a>
+                <a href="get_started" id="bottom-btn">Get Started</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="navbar">
+            <div class="navmenu col-12 col-s-12">
+                <a id="logo" href="#">taa.IO</a>
+                <ul>
+                    <li><a href="my_taa.io">My taa.IO</a></li>
+                    <li><a href="sign_up">Sign Up</a></li>
+                    <li><a href="sign_in">Sign In</a></li>
+                    <li><a href="get_started" id="menu-button">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Hero Image section-->
+        <div class="container">
+            <div class="row">
+                <div class="intro col-5 col-s-12">
+                    <h1>Analytical,<br> Non-cryptic Links</h1>
+                    <p>Free, secure, clean and easy to use URL shortener</p>
+                    <button name="lets-start" id="lets-start">Let's Get Started</button>
+                </div>
+                <div class="intro-img col-5 col-s-12">
+                    <img src="images/hero_image.svg">
+                </div>
+            </div>
+        </div>
+        <!--URL input section-->
+        <div class="container">
+            <div class="row">
+                <div class="submit-url">
+                    <input class="col-7 col-s-10" id="input-url" type="text" name="short-url" placeholder="Shorten your link">
+                    <button class="col-3 col-s-10" name="shorten" id="shorten">Shorten</button>
+                </div>
+            </div>
+        </div>
+        <!--Learning section-->
+        <div class="container learn-bg">
+            <div class="row">
+                <div class="learn-heading">
+                    <h3>Learn With Every Click</h3>
+                    <p>Get the necessary insight of your shared links with out industry leading features.</p>
+                </div>
+            </div>
+        <!--Learning Card section-->
+            <div class="row">
+                <div class=" card">
+                    <div class="col-3 col-s-11">
+                        <img src="images/share.svg">
+                        <h4>Inspire trust</h4>
+                        <p>Do not cram someone's email or message boards with logn scary looking links, share with them a very clean and short URL, that not only looks good but gives the receiver a confidence to click on it.</p>
+                    </div>
+                    <div class="col-3 col-s-11">
+                        <img src="images/rocket.svg">
+                        <h4>Boost your results</h4>
+                        <p>With the results from our powerful analytical tools, get the necessary nsight to plan your co,paigns to achieve the KPI you strive to achieve</p>
+                    </div>
+                    <div class="col-3 col-s-11">
+                        <img src="images/desktop.svg">
+                        <h4>Powrful Analytcs</h4>
+                        <p>taa.IOnot only gives you an easy tool to shorten your links but it provides you with an array of powerful analytical tools to know all about link clicks and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Get Started section-->
+        <div class="container">
+            <div class="row">
+                <div class="get-started">
+                    <h2>Take your links to a new level</h2>
+                    <div>
+                        <button name="get-started" id="get-started">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Brands logo section-->
+        <div class="container">
+            <div class="row">
+                <div class="brands">
+                    <h3>The Most Recognized Brands In The World Love taa.IO</h3>
+                    <div>
+                        <div><img src="images/splash_logotype.svg" height="40px" width="auto"></div>
+                        <div><img src="images/designandtechnology.svg" height="40px" width="auto"></div>
+                        <div><img src="images/doudoulinux_logo.svg" height="40px" width="auto"></div>
+                        <div><img src="images/fcrc_logo_counter_c.svg" height="40px" width="auto"></div>
+                        <div><img src="images/myllogo.svg" height="40px" width="auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer section-->
+        <div class="footer">
+            <div class="row">
+                <div class="footer-link">
+                    <div class="footer-menu col-10 col-2-10">
+                        <span>Copyright @2021 <a href="#">taa.IO.</a> All rights reserved.</span>
+                        <ul>
+                            <li><a href="policy">Privacy Policy</a></li>
+                            <li><a href="terms">Terms Of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="back-to-top col-2 col-s-12">
+                        <button id="back-to-top">^</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
